@@ -10,7 +10,7 @@ emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kiri
       	'mail.ru': ['roman.kolosov', 'ilya_gromov', 'masha.yashkina']}
 
 for key in emails.keys():
-	print('-------------' + key + '-------------')
+	print('-'*13 + key + '-'*13)
 	for value in emails.values():
 		for real_value in value:
 			print(real_value + '@' + key)
