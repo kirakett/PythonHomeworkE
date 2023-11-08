@@ -4,3 +4,4 @@ dictation.update({'Kirill': '17'})
 for key, value in dictation.items():
     summa += int(value)
 print('Сумма возрастов равна', summa)
+#ялквмом
