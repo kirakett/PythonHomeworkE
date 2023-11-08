@@ -11,3 +11,12 @@ F – на строки и на массивы. И даже было G зада�
 first = "0 0 0 0 0 0 0" #Вывод должен быть 0
 second = "1 1 1 0 0 0 0" # Вывод должен быть 3
 third = "1 1 1 1 1 1 1" # Вывод должен быть 1
+def TasksResult(list):
+    for_list = list.split()
+    res = []
+    for i in for_list:
+        res.append(int(i))
+    print(res[0] + res[1] + res[2] - res[3] - res[4] - res[5] + res[6])
+TasksResult(first)
+TasksResult(second)
+TasksResult(third)

@@ -7,3 +7,8 @@
 newspaper = range(1, 76)
 magazine = range(77, 104)
 both = range(21, 34)
+newspaper = set(newspaper)
+magazine = set(magazine)
+both = set(both)
+print(len((newspaper | magazine) - both))
+
