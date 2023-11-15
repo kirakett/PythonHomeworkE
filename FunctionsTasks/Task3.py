@@ -7,3 +7,13 @@
 
 Выдачу допуска реализуй как функцию.
 """
+def true_or_false(count_point):
+    if count_point > 50:
+        result = 'True'
+    else:
+        result = 'False'
+    if result == 'False':
+        print('Вы не допущены к сессии')
+    return result
+for i in range(count_students := int(input('Введите количество учеников: '))):
+    print(true_or_false(int(input('Здравствуй. Введи количество баллов за тест: '))))

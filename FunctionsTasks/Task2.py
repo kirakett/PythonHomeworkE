@@ -7,3 +7,13 @@
 
 Примечание. Наличие функции является обязательным. Функция должна принимать количество набранных баллов.
 """
+def count_points(point):
+    if point > 0 and point < 49:
+        discount = '10%'
+    elif point > 49 and point < 99:
+        discount = '15%'
+    else:
+        discount = '20%'
+    return discount
+
+print(count_points(int(input('Введите количество баллов: '))))

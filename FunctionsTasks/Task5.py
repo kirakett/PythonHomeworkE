@@ -10,3 +10,19 @@
 - баллов больше 50 и меньше или равно 80 — «Наградить похвальной грамотой.»;
 - остальные случаи — «Выдать грамоту об участии.».
 """
+    def count_points():
+        result_points = 0
+        while (flag := input('Для старта напишите что-нибудь. Если вы хотите прекратить программу, напишите "стоп"\n')) != 'стоп':
+            name = input('Введите имя: ')
+            count_subject = int(input('Введите количество предметов: '))
+            for i in range(count_subject):
+                points = int(input('Введите количество баллов за один предмет: '))
+                result_points += points
+            if result_points > 80:
+                print('Наградить дипломом')
+            elif result_points > 50 and result_points <= 80:
+                print('Наградить похвальной грамотой')
+            else:
+                print('Выдать грамоту об участии')
+
+    count_points()
