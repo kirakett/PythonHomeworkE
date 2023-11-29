@@ -5,3 +5,17 @@
 Если 30 минут закончились или игрок вводит «off» — завершать работу.
 Оформить в виде функции.
 """
+from time import *
+def chess_game():
+    start = time()
+    if choice := input("Ваш ход: ") == 'off':
+        print('Программа завершена')
+    else:
+        end = time()
+        if (end - start) / 60  >= 60:
+            print('Программа завершена')
+        else:
+            total = (end - start) / 60
+            print(round(60 - total, 2), 'минут')
+
+chess_game()
